@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Weather Forecast</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Weather Forecast</h1>
+            <div class="navbar">
+                <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="forecast.html">Forecast</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="about.html">Donate</a></li>
+            </ul>
+        </div>
+    </header>
+
+    
+    <main style="text-align:center;">
+        <!-- Donation Form -->
+        <div class="donation-form" >
+            <h3>Support Us</h3>
+            <form id="donateForm">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required placeholder="Enter your name" required>
+                
+                <label for="amount">Donation Amount:</label>
+                <input type="text" id="amount" name="amount" required placeholder="Enter amount" min="1" required>
+                
+                <button type="submit" id="donateButton">Donate</button>
+            </form>
+        </div>
+
+        <h2>About Us</h2>
+        <p>Real struggles and behind the scenes of our team</p>
+        <iframe width="760" height="515" src="https://www.youtube.com/embed/tb7gCdpUprE?si=deygTUBWgWmFqckw" 
+        title="YouTube video player" frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>  
+    </main>
+    <script src="script.js"></script>
+
+    <footer>
+        <p>&copy; 2024 Weather Forecast</p>
+    </footer>
+</body>
+</html>

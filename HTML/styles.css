@@ -1,0 +1,160 @@
+
+html {
+    scroll-behavior: smooth;
+  }
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    height: 145vh;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+  grid-area: main;
+  font-size: 20px;
+  color: black;
+  flex-grow: 1;
+}
+
+footer {
+  grid-area: footer;
+  background-color: var(--base-color);
+  background-blend-mode: screen;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 5px;
+  padding-top: 10px;
+  color: gray;
+  text-shadow: 0 0 2x white, 0 0 20px white;
+  width: 100vw; 
+}
+
+header {
+    background-color: #54bee4;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+  }
+
+.navbar {
+    background-image: linear-gradient(
+      rgb(8, 3, 0) 0%,
+      rgba(43, 19, 1, 0.678) 50%,
+      rgba(33, 15, 1, 0) 100%
+    );
+    padding: 1em 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    font-family: "Tiny5", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 1em;
+  }
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+
+select {
+    background-color: whitesmoke;
+    border: none;
+    border-bottom: 1px solid #666;
+    color: black;
+    padding: 10px 0;
+    margin-bottom: 20px;
+    width: 15rem;
+    transition: border-color 0.3s ease, color 0.3s ease;
+  } 
+
+form {
+    margin-bottom: 20px;
+}
+
+label {
+    margin-right: 10px;
+}
+
+input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+table {
+    width: 80%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+td {
+    border-collapse: collapse;
+    border: 1px solid whitesmoke;
+    padding: 20px 10px;
+    text-align: center;
+}
+
+th {
+    border-collapse: collapse;
+    background-color: whitesmoke;
+    color: black;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.donation-form {
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+.donation-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.donation-form input {
+  margin-bottom: 10px;
+  padding: 10px;
+  width: 100%;
+  max-width: 300px;
+}
+
+button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  background-color: #54bee4; /* Blue */
+  color: white;
+}

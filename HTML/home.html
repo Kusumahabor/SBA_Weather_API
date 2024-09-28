@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        .containerflex {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin-top: 10px;
+            gap: 50px;
+            
+        }
+        .boxes {
+            border: 1px solid blue; /* Add border to boxes */
+            text-align: center;
+            flex-grow: 1;
+            min-width: 100px;
+        }
+        #box1 {
+            background-image: url(images/radar3.webp);
+            height: 800px; /* Adjust height for visibility */
+            width: 100%; 
+            background-size: cover; /* Cover the box with the image */
+            background-position: center; /* Center the image */
+            transition: transform 2s;
+        }
+        .boxes:hover{
+            transform: scale(0.9);
+        }
+        
+        #box2 {
+            background-image: url(images/radar2.jpg);
+            height: 800px; /* Adjust height for visibility */
+            width: 100%; 
+            background-size: cover; /* Cover the box with the image */
+            background-position: center; /* Center the image */
+            transition: transform 2s;
+        }
+        #box3 {
+            background-image: url(images/radar1.webp);
+            height: 800px; /* Adjust height for visibility */
+            width: 100%; /* Adjust width for visibility */
+            background-size: cover; /* Cover the box with the image */
+            background-position: center; /* Center the image */
+            transition: transform 2s;
+        }
+        
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to Weather Forecast</h1>
+        <div class="navbar">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="forecast.html">Forecast</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="about.html">Donate</a></li>
+            </ul>
+        </div>
+    </header>
+    <main>
+    <h2>National Forecast and Current Conditions</h2>
+    <h5>September 26, 2024</h5>
+    <div class="containerflex">
+        <div class="boxes" id="box1"></div>
+        <p>
+            Forecast high temperatures and weather are found in the map above.
+        </p>
+        <div class="boxes" id="box2"></div>
+        <p>
+            The radar map above shows where any rain, snow, freezing rain, or sleet is currently falling.
+        </p>
+        <div class="boxes" id="box3"></div>
+        <p>The above map shows the rain and snow forecast for the next 48 hours.</p>
+    </div>
+</main>
+   
+<footer>
+    <p>&copy; 2024 Weather Forecast</p>
+</footer>
+   
+</body>
+</html>

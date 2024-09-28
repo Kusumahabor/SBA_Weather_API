@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="navbar-logo">
+            <h1>Weather Forecast</h1>
+        </div>
+            <div class="navbar">
+                <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="forecast.html">Forecast</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="about.html">Donate</a></li>
+            </ul>
+        </div>
+        <style>
+            body{
+                background: url(images/giphy.webp);
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            main{
+                font-family: 'Roboto', sans-serif;
+                color: whitesmoke;
+            }
+        </style>
+    </header>
+
+    <main style="font-family: 'Roboto', sans-serif; color: whitesmoke;">
+        <h2>Today's Weather</h2>
+        
+        <!-- Weather Search Form -->
+        <form id="cityForm">
+            <label for="city">Select City:</label>
+            <select id="refer" name="refer" required pattern="^[a-zA-Z\s]+$" placeholder="City name (letters only)">
+                <option value="" disabled selected>
+                    Select City
+                </option>
+                <option value="New York">New York</option>
+                <option value="Los Angeles">Los Angele</option>
+                <option value="Chicago">Chicago</option>
+                <option value="Houston">Houston</option>
+                <option value="Phoenix">Phoenix</option>
+                <option value="Tampa">Tampa</option>
+                <option value="Dallas">Dallas</option>
+                <option value="San Francisco">San Francisco</option>
+                <option value="Seattle">Seattle</option>
+                <option value="Atlanta">Atlanta</option>
+                <option value="Columbus">Columbus</option>
+                <option value="Denver">Denver</option>
+                <option value="Washington DC">Washington DC</option>
+            </select>
+        </form>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>City</th>
+                    <th>Temperature (°C)</th>
+                    <th>Condition</th>
+                </tr>
+            </thead>
+            <tbody id="weatherTable">
+                <!-- Data will be updated via JavaScript -->
+            </tbody>
+        </table>
+    </main>
+
+    <script src="script.js"></script>
+
+    <footer>
+        <p>&copy; 2024 Weather Forecast</p>
+    </footer>
+</body>
+</html>
